@@ -1,0 +1,27 @@
+.partners-image-wrapper {
+	display: inline-block; 
+    margin: 20px;
+}
+
+.partners-image-container {
+	height: 15rem;
+	width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.partners-image {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0;
+}
+
+.creativity-tittle {
+	font-size: 8rem !important;
+	color: white !important;
+	line-height: 1.2 !important;
+	font-family: 'leckerli_oneregular';
+	margin: 3rem;
+}
