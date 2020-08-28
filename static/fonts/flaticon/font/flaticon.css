@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 19/06/2020 14:45
+  	Creation date: 28/08/2020 22:21
   	*/
 
 @font-face {
@@ -25,16 +25,12 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-weight: normal;
+  font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-reading-book:before { content: "\f100"; }
-.flaticon-presentation:before { content: "\f101"; }
-.flaticon-enterprise:before { content: "\f102"; }
+.flaticon-volunteer:before { content: "\f100"; }
+.flaticon-research:before { content: "\f101"; }
+.flaticon-course:before { content: "\f102"; }
