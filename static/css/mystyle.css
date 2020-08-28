@@ -18,10 +18,37 @@
 	margin: 0;
 }
 
+.creativity-font {
+	font-family: 'leckerli_oneregular';
+}
+
 .creativity-tittle {
 	font-size: 8rem !important;
 	color: white !important;
 	line-height: 1.2 !important;
-	font-family: 'leckerli_oneregular';
 	margin: 3rem;
+}
+
+.map-iframe {
+	width: 100%;
+    height: 35rem;
+}
+
+.cadastro-section iframe {
+	height: 35rem;
+	background-color: #ffffff;
+}
+
+.cadastro-section h3 {
+	font-size: 4rem;
+    color: #ffffff;
+}
+
+.footer-logo {
+	height: 10rem;
+}
+
+html, body {
+	height: auto;
+	min-height: 100%;
 }
