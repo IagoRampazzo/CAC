@@ -52,3 +52,11 @@ html, body {
 	height: auto;
 	min-height: 100%;
 }
+
+.vertical-middle {
+	vertical-align: middle;
+}
+
+#section-acoes a.btn {
+	font-size: 1.2rem !important;
+}
