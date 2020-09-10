@@ -60,3 +60,24 @@ html, body {
 #section-acoes a.btn {
 	font-size: 1.2rem !important;
 }
+
+.h3-smaller {
+	font-size: 1.50rem !important;
+}
+
+.count-number {
+	color: #dc3545;
+	font-size: 6rem;
+}
+
+.number-title {
+	font-size: 3.5rem;
+}
+
+header{
+	background-color: rgba(0,0,0, 0.7);
+	position: fixed !important;
+	top: 0;
+	display: block;
+	transition: top 0.3s;
+}

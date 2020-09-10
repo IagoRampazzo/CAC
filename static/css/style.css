@@ -446,8 +446,7 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   position: absolute;
   top: 0;
-  width: 100%;
-  padding: 1rem; }
+  width: 100%;}
   @media (max-width: 991.98px) {
     .site-navbar {
       padding-top: 3rem;
@@ -473,7 +472,9 @@ h1, h2, h3, h4, h5,
     padding: 0;
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
-      color: #dc3545 !important; }
+      color: #dc3545 !important; 
+	  font-weight: bold;
+	  }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block; }
@@ -809,7 +810,7 @@ h1, h2, h3, h4, h5,
     color: #fff; }
 
 .site-section {
-  padding: 7rem 0; }
+  padding: 4rem 0; }
   @media (max-width: 991.98px) {
     .site-section {
       padding: 3rem 0; } }
