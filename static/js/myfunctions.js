@@ -1,49 +1,17 @@
-var resetLiActive = function() {
+function resetLiActive() {
 	$('.nav-link').each(function() {
 		$(this).parent().removeClass("active");
   });
 }
 
-$("#menu-home").click(function() {
+function goToSection(idSection) {
 	resetLiActive();
-	$(this).parent().addClass("active");
-    $('html,body').animate({
-        scrollTop: $("#section-home").offset().top},
+	
+	$('html,body').animate({
+        scrollTop: $("#"+idSection).offset().top},
         1000);
-});
-
-
-$("#menu-acoes").click(function() {
-	resetLiActive();
-	$(this).parent().addClass("active");
-    $('html,body').animate({
-        scrollTop: $("#section-acoes").offset().top+1},
-        1000);
-});
-
-$("#menu-visoes").click(function() {
-	resetLiActive();
-	$(this).parent().addClass("active");
-    $('html,body').animate({
-        scrollTop: $("#section-visoes").offset().top+1},
-        1000);
-});
-
-$("#menu-onde").click(function() {
-	resetLiActive();
-	$(this).parent().addClass("active");
-    $('html,body').animate({
-        scrollTop: $("#section-onde").offset().top+1},
-        1000);
-});
-
-$("#menu-cadastar").click(function() {
-	resetLiActive();
-	$(this).parent().addClass("active");
-    $('html,body').animate({
-        scrollTop: $("#section-cadastar").offset().top+1},
-        1000);
-});
+	//$('.icon-close2').click();
+}
 
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
@@ -66,7 +34,21 @@ $.fn.isFocused = function() {
   return elementBottom > viewMiddle && elementTop < viewMiddle;
 };
 
-var countViewed = false;
+var countNumbers = function(){
+	$('.count').each(function() {
+		$(this).prop('Counter',0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: 2000 + Math.floor(Math.random() * Math.floor(3000)),
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	  });
+}
+
+var countViewed = 0;
 var prevScrollpos = window.pageYOffset;
 $(window).on('resize scroll', function() {
   $('.site-section').each(function() {
@@ -81,21 +63,14 @@ $(window).on('resize scroll', function() {
   if (!countViewed)
 	  $('.count').each(function() {
 		if ($(this).isInViewport()) {
+			if (!countViewed)
+				countNumbers();
 			countViewed = true;
-			$(this).prop('Counter',0).animate({
-				Counter: $(this).text()
-			}, {
-				duration: 2000 + Math.floor(Math.random() * Math.floor(3000)),
-				easing: 'swing',
-				step: function (now) {
-					$(this).text(Math.ceil(now));
-				}
-			});
 		}
 	  });
 	  
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos >= currentScrollPos) {
 	$('header').css('top', 0);
   } else {
 	$('header').css('top', '-200px');
