@@ -23,10 +23,13 @@
 }
 
 .creativity-tittle {
-	font-size: 8rem !important;
+	font-size: 12vw !important;
 	color: white !important;
-	line-height: 1.2 !important;
-	margin: 3rem;
+	line-height: 1 !important;
+	margin: 2rem;
+	border-bottom: 0.7rem solid #dc3545;
+    display: inline-block;
+    padding-bottom: 0rem;
 }
 
 .map-iframe {
@@ -68,6 +71,8 @@ html, body {
 .count-number {
 	color: #dc3545;
 	font-size: 6rem;
+	background-color: #ffe2e5;
+    border-radius: 50%;
 }
 
 .number-title {
@@ -80,4 +85,37 @@ header{
 	top: 0;
 	display: block;
 	transition: top 0.3s;
+}
+
+.hamb-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#section-home {
+	padding-top: 0 !important;
+}
+
+.text-black .bar1, .text-black .bar2, .text-black .bar3 {
+	background-color: #212529 !important;
 }
