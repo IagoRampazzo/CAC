@@ -48,7 +48,8 @@
 }
 
 .footer-logo {
-	height: 30rem;
+	height: 25rem;
+	box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
 }
 
 html, body {
@@ -73,6 +74,7 @@ html, body {
 	font-size: 6rem;
 	background-color: #ffe2e5;
     border-radius: 50%;
+    box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
 }
 
 .number-title {
@@ -143,4 +145,26 @@ header{
 
 footer {
 	color: #ffffff;
+}
+
+blockquote p {
+	font-size: 1.2rem;
+}
+
+.testimonial-2 {
+    height: 100%;
+    box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.doacao .btn {
+	box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
+	#a91f2c
+}
+
+.doacao .btn:hover {
+	background-color: #a91f2c;
+}
+
+.no-padding {
+	padding-bottom: 0px !important; 
 }
