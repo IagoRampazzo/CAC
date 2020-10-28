@@ -48,7 +48,7 @@
 }
 
 .footer-logo {
-	height: 10rem;
+	height: 30rem;
 }
 
 html, body {
@@ -118,4 +118,29 @@ header{
 
 .text-black .bar1, .text-black .bar2, .text-black .bar3 {
 	background-color: #212529 !important;
+}
+
+.item-1 {
+	box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.img-container {
+	position: relative; 
+	height: 225px; 
+	width: 100%;
+	overflow: hidden;
+}
+
+.img-container .img-1 {
+	position: absolute;
+	right: 0;
+	top: -15px;
+}
+
+.item-1-contents {
+	height: 470px;
+}
+
+footer {
+	color: #ffffff;
 }
