@@ -8,7 +8,7 @@ function goToSection(idSection) {
 	resetLiActive();
 	
 	$('html,body').animate({
-        scrollTop: $("#"+idSection).offset().top},
+        scrollTop: $("#"+idSection).offset().top+1},
         1000);
 	//$('.icon-close2').click();
 }
