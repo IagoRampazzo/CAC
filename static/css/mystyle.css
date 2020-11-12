@@ -47,9 +47,8 @@
     color: #ffffff;
 }
 
-.footer-logo {
+.picpay-img {
 	height: 25rem;
-	box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
 }
 
 html, body {
@@ -143,22 +142,16 @@ header{
 	height: 470px;
 }
 
-footer {
-	color: #ffffff;
-}
-
 blockquote p {
 	font-size: 1.2rem;
 }
 
-.testimonial-2 {
-    height: 100%;
-    box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
+.outer-shadow {
+	box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
 }
 
-.doacao .btn {
-	box-shadow: 4px 0px 10px 0px rgb(0 0 0 / 20%);
-	#a91f2c
+.testimonial-2 {
+    height: 100%;
 }
 
 .doacao .btn:hover {
@@ -167,4 +160,13 @@ blockquote p {
 
 .no-padding {
 	padding-bottom: 0px !important; 
+}
+
+footer {
+	color: #ffffff;
+	font-size: 0.7rem;
+}
+
+.footer-logo {
+	height: 10rem;
 }
